@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.main .navbar {
+    position: relative;
+    padding: 20px;
+}
+
+.main .navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.main .navbar .icon {
+   
+    border: none;
+    outline: none;
+}
+
+
+.main .navbar .menu {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translate(-50%, -50%);
+}
+
+.main .navbar .menu ul>li {
+    display: inline;
+    padding: 0 10px 0px 5px;
+    outline: 0;
+    border: 0;
+}
+
+.main .navbar .menu ul>li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main .navbar .menu ul>li .cart-image {
+    background-image: url("assets/icons/shopping-cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    outline: 0;
+    height: 22px;
+    width: 22px;
+}
+
+.main .home-cover-image {
+    width: 100%;
+}
+
+.cover-image {
+    background-image: url("assets/images/bg.jpg");
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.home-page-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.home-page-footer .column {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.home-page-footer .column p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+
+.home-page-footer .column>ul li {
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+}
+
+.home-page-footer .column>ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.new-arrival-title {
+    text-align: center;
+    padding: 12px;
+}
+
+.new-arrival-grid-layout {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+}
+
+.new-arrival-grid-layout .column {
+    float: left;
+    width: 33.33%;
+    padding: 12px;
+    margin: 25px 0 25px 0;
+}
+
+.new-arrival-grid-layout .column:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.new-arrival-grid-layout .column:after {
+    clear: both;
+    display: table;
+}
+
+.new-arrival-grid-layout .column .grid-item {
+    position: relative;
+}
+
+.new-arrival-grid-layout .column .grid-item .price {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.new-arrival-grid-layout .column .grid-item .cart-button {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    padding: 3px;
+    border: 0;
+    outline: 0;
+    background: 0;
+}
+
+.new-arrival-grid-layout .column .grid-item .cart-button .cart-image {
+    background-image: url("assets/icons/shopping-cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    outline: 0;
+    height: 22px;
+    width: 22px;
+}
+
+.new-arrival-grid-layout .column .arrival-one {
+    background-image: url("assets/images/sofa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-two {
+    background-image: url("assets/images/chairs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-three {
+    background-image: url("assets/images/newcontent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-four {
+    background-image: url("assets/images/wb1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-five {
+    background-image: url("assets/images/nc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-six {
+    background-image: url("assets/images/black\ chair.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-footer {
+    margin-top: 20%;
+    background-color: #808080;
+    font-weight: bolder;
+}
+
+.new-arrival-page-footer {
+    text-align: center;
+    padding: 12px;
+}
+
+.new-arrival-grid-layout .column .arrival-seven {
+    background-image: url("assets/images/sofa1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-eight {
+    background-image: url("assets/images/antique\ chair.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-nine {
+    background-image: url("assets/images/dt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-ten {
+    background-image: url("assets/images/kitchen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-eleven {
+    background-image: url("assets/images/chairs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.new-arrival-grid-layout .column .arrival-tweleve {
+    background-image: url("assets/images/bs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px
+}
+
+.exclusive-page-grid-layout .column-one {
+    float: left;
+    width: 70%;
+    padding: 12px;
+    margin: 25px 0 25px 0;
+    background-image: url("assets/images/lr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 500px;
+}
+
+.exclusive-page-grid-layout .column-two .exclusive-one {
+    margin-top: 50%;
+}
+
+.exclusive-page-grid-layout .column-two {
+    float: right;
+    width: 30%;
+    padding: 12px;
+    margin: 25px 0 25px 0;
+}
+
+.exclusive-page-sale-banner {
+    clear: both;
+    background-image: url("assets/images/sale.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 260px;
+    width: 100%;
+}
+
+.main .about-cover-image {
+    width: 100%;
+}
+
+.about-cover-image {
+    background-image: url("assets/images/bg.jpg");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.about-us-description {
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    padding: 25px;
+}
+
+.form-container .user-form {
+    float: left;
+    width: 30%;
+    height: 100vh;
+}
+
+.form-container .user-form h2 {
+    margin: 0 10px 10px 0;
+}
+
+.form-container .signUp-form h2 {
+    margin: 0 10px 10px 0;
+}
+
+.form-container .user-form form>label {
+    margin: 20px 0 20px 0;
+}
+
+.form-container .user-form input[type="text"] {
+    padding: 5px;
+    width: 60%;
+}
+
+.form-container .signUp-form input[type="text"] {
+    padding: 5px;
+    width: 50%;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 380px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("assets/icons/shopping-cart.png");
+}
+
+.cart-description {
+    position: absolute;
+    top: 80%;
+    left: 44%;
+    text-align: center;
+}
+
+.cart-description a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart-description button {
+    padding: 8px;
+}
+
+#login {
+    padding: 8px;
+    margin-left: 100px;
+}
+
+#otp {
+    padding: 8px;
+    margin-left: 50px;
+}
+
+#google {
+    padding: 8px;
+    margin-left: 20px;
+}
+
+#or {
+    margin-left: 65px;
+}

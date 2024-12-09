@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon"><a href="index.html">Modern Home</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="NewArrival.html">New Arrival</a></li>
+                    <li><a href="Catagories.html">Shop By Categories</a></li>
+                    <li><a href="Exclusive.html">Exclusives</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Cart.html"><img class="cart-image" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="user-form">
+                <h2>Login</h2>
+                <form>
+                    <label>Email : </label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+                    <span id="emailerr" class="error"></span><br>
+                    <label>Password : </label><br>
+                    <input style="width: 60%;" type="password" id="password" name="password" placeholder="Enter your password"><br>
+                    <span id="passworderr" class="error"></span><br>
+                    <input type="checkbox"><label>Remember me</label>
+                    <a href="#">Forgot Password?</a><br><br>
+                    <button id="login" type="button" onclick="validationform()">Login</button><br><br>
+                    <p id="or">Or Continue with</p><br>
+                    <div>
+                        <button id="otp" type="button">OTP Login</button>
+                        <button id="google" type="button">Google</button>
+                    </div>
+                </form>
+            </div>
+            <div class="signUp-form">
+                <h2>Create an account</h2>
+                <form>
+                    <label for="fname">Full Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your full name"><br><br>
+                    <label for="email" class="email-lable">Email Id:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your email address"><br><br>
+                    <label for="phone`" class="email-lable">Phone:</label><br>
+                    <input style="width: 50%;"type="number" id="fname" name="fname" placeholder="Enter your phone number"><br><br>
+                    <label for="password" class="email-lable">Password:</label><br>
+                    <input style="width: 50%;"type="password" id="fname" name="fname" placeholder="Enter your password"><br><br>
+                    <label for="city" class="email-lable">City:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your city"><br><br>
+                    <label for="dob" class="email-lable">Date of Birth:</label><br>
+                    <input type="date" id="fname" name="fname" placeholder="Enter your birthdate"><br><br>
+                    <label for="gender" class="email-lable">Gender:</label>
+                    <input type="radio" name="male">Male
+                    <input type="radio" name="male">Female
+                    <input type="radio" name="male">Transgender<br><br>
+                    <input type="checkbox" name="agree">I have read and agreed to Modern Home Policy<br><br>
+                    <button type="button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="new-arrival-footer">
+        <div class="new-arrival-page-footer">
+            <p>Contact Us: +438 680 8328, + 438 680 8329</p>
+            <p>101, Avenue Richmond - H3H 1N9</p>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</head>
+
+</html>

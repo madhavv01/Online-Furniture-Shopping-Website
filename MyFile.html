@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is Email and pass validation:</h2>
+    <form id="loginform">
+        <label>Email : </label>
+        <input type="text" id="email" name="email" required><br>
+        <span id="emailerr" class="error"></span><br>
+        <label>Password : </label>
+        <input type="password" id="password" name="password" required><br>
+        <span id="passworderr" class="error"></span><br>
+        <button type="button" onclick="validationform()">Login</button>
+    </form>
+    <script src="MyScript.js"></script>
+</body>
+</html>
